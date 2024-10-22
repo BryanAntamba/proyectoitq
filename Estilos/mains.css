@@ -18,7 +18,7 @@ body {
     /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
     /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
     margin: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 221, 157);
 }
 /*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
 @media screen and(max-width:600px) {
@@ -134,7 +134,7 @@ body {
 .Content-About {
     position: relative;
     width: 100%;
-    border: 1px solid rgb(255, 226, 168);
+    border: 1px solid rgb(255, 218, 144);
     background: white;
 }
 

@@ -1,241 +1,142 @@
-/*Tamaño del contenido de toda la pagina*/
 html {
     font-size: 16px;
 }
 
-/*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
-@media screen and(max-width:400px) {
+/* Adaptamos la letra para pantallas pequeñas */
+@media screen and (max-width: 400px) {
     html {
-        font-size: 3px;
+        font-size: 12px;
     }
 }
 
-/*Los elementos del heigth usaran el 100% de sus contenedores*/
+/* Alineamos todos los elementos a lo largo del contenedor */
 html,
 body {
     width: 100%;
-    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
-    /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
     margin: 0;
+    padding: 0;
     background: rgb(255, 239, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
-@media screen and(max-width:600px) {
+/* Para pantallas menores a 600px, hacemos ajustes */
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4 {
-        /*Margen hacia arriba*/
-        margin-top: 6rem;
+    .visual-ubication img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .header-social i {
+        font-size: 30px;
+    }
+
+    .numero_contacto {
+        font-size: 16px;
     }
 }
-.dos-opciones {
-    position: relative;
+
+
+/* Estilos de las secciones */
+.dos-opciones, .tiendauno, .Ubication {
     width: 100%;
-    border: 1px solid rgb(243, 194, 120);
     height: 80px;
     background-color: rgb(243, 194, 120);
-    /*De derecha a la izquierda*/
-    right: 0;
-    /*De izquierda a la derecha*/
-    left: 0;
-    /*De abajo para arriva*/
-    bottom: 0;
-}
-/*estilo al menu de la tienda para regresar a la pagina principal*/
-.dos-opciones a {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    left: 1%;
-    padding-top: 1%;
-    display: inline-block;
-    list-style: none;
-    margin-left: 0;
-    margin-top: 20px;
-    padding-left: 0%;
-    font-family: Barlow;
-    font-size: 25px;
-    display: block;
-    margin: 0 1rem;
-    color: white;
-    position: relative;
-    /*De derecha a la izquierda*/
-    right: 0;
-    /*De izquierda a la derecha*/
-    left: 0;
-    /*De abajo para arriva*/
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tiendauno {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(243, 194, 120);
-    height: 80px;
-    background-color: rgb(243, 194, 120);
-    /*De derecha a la izquierda*/
-    right: 0;
-    /*De izquierda a la derecha*/
-    left: 0;
-    /*De abajo para arriva*/
-    bottom: 0;
-}
-/*estilo al menu de la tienda para regresar a la pagina principal*/
-.tiendauno a {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    left: 1%;
-    padding-top: 1%;
-    display: inline-block;
-    list-style: none;
-    margin-left: 0;
-    margin-top: 20px;
-    padding-left: 0%;
+/* Centramos los enlaces en las secciones */
+.dos-opciones a, .tiendauno a {
     font-family: Barlow;
     font-size: 25px;
-    display: block;
-    margin: 0 1rem;
     color: white;
-    position: relative;
-    /*De derecha a la izquierda*/
-    right: 0;
-    /*De izquierda a la derecha*/
-    left: 0;
-    /*De abajo para arriva*/
-    bottom: 0;
+    text-align: center;
+    margin: 0 1rem;
+    text-decoration: none;
 }
 
+/* Hover y estado activo de los enlaces */
 .tiendauno a:hover,
 .tiendauno a:focus,
 .tiendauno a:active {
     color: rgb(230, 162, 44);
 }
 
-
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
+/* Centramos la imagen en la sección de ubicación */
 .visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
     width: 200px;
-    /*alto de 67 pixeles de la imagen*/
     height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
+    margin: 0 auto;
+    display: block;
 }
 
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
+/* Centramos el logo */
+#Logo_nosotros img {
+    max-width: 100%; /* Ajusta el ancho al contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    margin: 0 auto;
+    display: block;
 }
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
+#Logo_nosotros {
+    width: 100%; /* Contenedor ocupa todo el ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo si es necesario */
+    margin: 0 auto; /* Centra el contenedor */
 }
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-/*Tamaño de la imagen y la centramos*/
-#Logo_nosotros img{
-    width: 600px;
-    height: 500px;
-    margin-left: 460px;
-}
-/*centramos el titulo y cambiamos de color*/
-#nosotros_h2 h2{
+/* Centramos y estilizamos el título */
+#nosotros_h2 h2 {
     text-align: center;
     color: rgb(255, 131, 37);
-    font-family: barlow;
+    font-family: Barlow;
 }
-#nosotros_p h3 p{
+
+/* Centramos y estilizamos los párrafos */
+#nosotros_p h3 p {
     font-size: 23px;
     text-align: center;
     color: rgb(255, 131, 37);
-    font-family: lexend;
+    font-family: Lexend;
 }
-/*No tendra los punto de lista desordenada*/
-.header-social li {
+
+/* Centrar el contenido completo de la sección de contacto */
+.numero_contacto {
+    text-align: center; /* Centra todo el contenido */
+    margin-top: 20px;
+}
+
+/* Alinear los iconos de redes sociales en una fila */
+.header-social {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px; /* Añade espacio entre los iconos */
+    padding: 0;
     list-style: none;
+    margin-bottom: 10px; /* Añade espacio entre los iconos y la información de contacto */
 }
-/*estilo a los iconos*/
+
+/* Estilo para los iconos de redes sociales */
 .header-social li a i {
-    font-size: 40px;
+    font-size: 45px;
     width: 40px;
     height: 40px;
     color: rgb(251, 144, 44);
 }
-/*estilo y ubicacion a los contactos*/
+
+/* Centrar y estilizar la información de contacto */
 .numero_contacto ul li {
+    text-align: center; /* Centra el texto del contacto */
     list-style: none;
-    margin-left: 300px;
     font-size: 20px;
-    transform: translateY(-70px);
-    color: rgb(251, 144, 44);
-    font-family: barlow;
+    color: rgb(255, 131, 37);
+    font-family: Barlow, sans-serif;
+    margin-top: 1px; /* Mueve el texto hacia arriba */
+    transform: translateY(-10px); /* Ajusta aún más hacia arriba */
 }
