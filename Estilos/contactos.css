@@ -1,3 +1,4 @@
+
 /*Tamaño del contenido de toda la pagina*/
 html {
     font-size: 16px;
@@ -14,6 +15,7 @@ html {
 html,
 body {
     width: 100%;
+    border: 1px solid rgb(255, 239, 207);
     /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
     /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
     margin: 0;
@@ -87,7 +89,6 @@ body {
     /*De abajo para arriva*/
     bottom: 0;
 }
-
 /*estilo al menu de la tienda para regresar a la pagina principal*/
 .tiendauno a {
     display: inline-block;
@@ -119,141 +120,137 @@ body {
 .tiendauno a:active {
     color: rgb(230, 162, 44);
 }
-.licohores h2 img{
-    width:105px;
-    height:170px;
-}
-/*cambio de letra y el color de la letra*/
-.licohores a{
-    font-family: barlow;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
 
-    /*centramos el texto al centro de cada producto*/
-}.licohores h2{
+
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+/*damos estilo para centrar el titulo*/
+#contactos_h2 h2 {
     text-align: center;
-}
-/*Cambiamos el tipo de color cuando el usuario ingrese el cursor a la imagen*/
-.licohores a:hover,
-.licohores a:focus,
-.licohores a:active{
-    color: rgb(211, 134, 40);
-}
-.menu li a{
-    list-style:none;
-    display: inline-block;
+    color: rgb(255, 170, 58);
     font-family: barlow;
 }
-/*-------------------------------------------------------------------------------------------------------------------*/
-/*posiciones y cambios en las imagenes de los licohores*/
-.licohores {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
-    gap: 15px; /* Espacio entre los elementos */
-  }
-
-  .licohores img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .licohores h2 {
-    text-align: center;
-    margin-top: 8px;
-  }
-
-.Ubication {
+/*damos estilo al parrafo de las instrucciones*/
+#contactos_p h3 p {
     position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
+    left: 160px;
+    color: rgb(253, 180, 107);
+    font-size: 20px;
+    font-family: lexend;
 }
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.header-social li {
+/*estilo a la lista de los contactos*/
+.loscontactos ul li{
     list-style: none;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 590px;
+    color: rgb(253, 180, 107);
+    font-family: lexend;
+}
+/*estilo a los contactos de la unbicaion*/
+#contactos_ubicacion h1 { 
+    text-align: center;
+    color: rgb(255, 170, 58);
+    font-family: Barlow;
+    font-size: 25px;
 }
 
+/*damos tamaño y posicion a los iconos de las redes sociales*/
 .header-social li a i {
     font-size: 40px;
     width: 40px;
     height: 40px;
-    color: rgb(251, 144, 44);
+    color: rgb(255, 170, 58);
 }
-
+/*Ubicacion de la imagen al centro en posicion relativa*/
+#mapa img{ 
+    margin-left: 398px;
+}
+/*indicamos que los iconos sociales no tengan puntos de lista desordenada*/
+.header-social li {
+    list-style: none;
+}
+/*damos ubicacion a los contactos de las listas al lado de los iconos para diseño moderno*/
 .numero_contacto ul li {
     list-style: none;
     margin-left: 300px;

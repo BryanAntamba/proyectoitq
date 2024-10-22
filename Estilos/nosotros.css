@@ -87,7 +87,6 @@ body {
     /*De abajo para arriva*/
     bottom: 0;
 }
-
 /*estilo al menu de la tienda para regresar a la pagina principal*/
 .tiendauno a {
     display: inline-block;
@@ -119,141 +118,119 @@ body {
 .tiendauno a:active {
     color: rgb(230, 162, 44);
 }
-.licohores h2 img{
-    width:105px;
-    height:170px;
-}
-/*cambio de letra y el color de la letra*/
-.licohores a{
-    font-family: barlow;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
 
-    /*centramos el texto al centro de cada producto*/
-}.licohores h2{
+
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.visual-ubication img {
+    /*Posicion absoluta*/
+    position: relative;
+    /*ancho de la imagen con 67 pixeles*/
+    width: 200px;
+    /*alto de 67 pixeles de la imagen*/
+    height: 67px;
+    /*dezplasamiento en la derecha*/
+    left: 44%;
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+    margin: 0;
+}
+/*Tamaño de la imagen y la centramos*/
+#Logo_nosotros img{
+    width: 600px;
+    height: 500px;
+    margin-left: 460px;
+}
+/*centramos el titulo y cambiamos de color*/
+#nosotros_h2 h2{
     text-align: center;
-}
-/*Cambiamos el tipo de color cuando el usuario ingrese el cursor a la imagen*/
-.licohores a:hover,
-.licohores a:focus,
-.licohores a:active{
-    color: rgb(211, 134, 40);
-}
-.menu li a{
-    list-style:none;
-    display: inline-block;
+    color: rgb(255, 131, 37);
     font-family: barlow;
 }
-/*-------------------------------------------------------------------------------------------------------------------*/
-/*posiciones y cambios en las imagenes de los licohores*/
-.licohores {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
-    gap: 15px; /* Espacio entre los elementos */
-  }
-
-  .licohores img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .licohores h2 {
+#nosotros_p h3 p{
+    font-size: 23px;
     text-align: center;
-    margin-top: 8px;
-  }
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
+    color: rgb(255, 131, 37);
+    font-family: lexend;
 }
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
-.Ubication {
-    position: relative;
-    width: 100%;
-    border: 1px solid rgb(255, 226, 168);
-    background-color: rgb(255, 220, 149);
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-}
-
-.visual-ubication img {
-    /*Posicion absoluta*/
-    position: relative;
-    /*ancho de la imagen con 67 pixeles*/
-    width: 200px;
-    /*alto de 67 pixeles de la imagen*/
-    height: 67px;
-    /*dezplasamiento en la derecha*/
-    left: 44%;
-    /*no tendra dezplasamiento en la derecha*/
-    right: auto;
-    /*No tendra dezplasamiento a la izquierda*/
-    bottom: auto;
-    margin: 0;
-}
-
+/*No tendra los punto de lista desordenada*/
 .header-social li {
     list-style: none;
 }
-
+/*estilo a los iconos*/
 .header-social li a i {
     font-size: 40px;
     width: 40px;
     height: 40px;
     color: rgb(251, 144, 44);
 }
-
+/*estilo y ubicacion a los contactos*/
 .numero_contacto ul li {
     list-style: none;
     margin-left: 300px;
